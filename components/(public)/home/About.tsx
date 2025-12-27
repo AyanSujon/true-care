@@ -4,60 +4,6 @@
 
 
 
-// "use client";
-
-// import React from 'react';
-// import { Heart, Shield, Users, Clock, MapPin, CheckCircle, Baby, Users2, Activity } from 'lucide-react';
-// import Link from 'next/link';
-
-// const About = () => {
-//   return (
-//     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white">
-//       {/* Hero Section */}
-//       <section className="relative py-20 px-6 overflow-hidden">
-//         <div className="max-w-7xl mx-auto">
-//           <div className="text-center mb-16">
-//             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-//               About <span className="text-pink-500">True Care</span>
-//             </h1>
-//             <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto">
-//               Your trusted platform for reliable babysitting, elderly care, and special care services — making caregiving easy, secure, and accessible for every family.
-//             </p>
-//           </div>
-//         </div>
-//       </section>
-
-
-
-
-//       {/* Closing Section */}
-//       <section className="py-20 px-6 bg-gradient-to-r from-pink-600 to-purple-700 text-white">
-//         <div className="max-w-4xl mx-auto text-center">
-//           <h2 className="text-4xl font-bold mb-8">Join Us in Making Care Accessible</h2>
-//           <p className="text-xl leading-relaxed">
-//             At True Care, we're building a community where families can find the support they need, when they need it most. 
-//             Because every family deserves true care.
-//           </p>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default About;
-
-
-
-
-
-
-
-
-
-
-
-
-
 import Image from "next/image";
 import { Heart, Users, Shield } from "lucide-react";
 

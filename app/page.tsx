@@ -6,7 +6,7 @@ import Services from "@/components/(public)/home/Services";
 import SuccessMetricss from "@/components/(public)/home/SuccessMetricss";
 import Testimonials from "@/components/(public)/home/Testimonials";
 import WhyChooseTrueCare from "@/components/(public)/home/WhyChooseTrueCare";
-import Image from "next/image";
+
 
 
 export default function Home() {
