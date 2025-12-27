@@ -83,7 +83,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sniglet.variable} ${kumbhSans.variable} antialiased font-body`}
+        className={`${sniglet.className} ${kumbhSans.className} antialiased`}
+        // className={`${sniglet.variable} ${kumbhSans.variable} antialiased font-body`}
       >
         <Navbar />
         <main>
