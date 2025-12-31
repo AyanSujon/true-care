@@ -12,6 +12,10 @@ const SocialButtons = () => {
         const result = await signIn('google', {
             redirect: false, callbackUrl: params.get("callbackUrl") || "/",
         });
+
+
+
+
         console.log(result)
         if (result?.error) {
             Swal.fire("Error", "Google sign in failed. Please try again.", "error");
@@ -22,7 +26,7 @@ const SocialButtons = () => {
                 icon: 'success',
                 confirmButtonText: 'Continue'
             }).then(() => {
-                // router.push("/");
+                router.push("/");
             });
         }
     };
