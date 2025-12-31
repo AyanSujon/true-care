@@ -11,7 +11,7 @@ interface ServiceCardProps {
   title: string;
   category: string;
   description: string;
-  features: string[]; // kept but not displayed in this minimal version
+  features: string[]; 
   price: number;
   unit: string;
   image: string;
