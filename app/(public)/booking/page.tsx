@@ -397,7 +397,7 @@ import { cn } from "@/lib/utils";
 import { getSingleProduct } from "@/actions/server/services";
 
 // React Hook Form + Zod
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { getRegions } from "@/actions/server/regions";
@@ -466,23 +466,61 @@ export default function BookingPage() {
 
 
 
-  // Fetch regions
+  // // Fetch regions
+  // useEffect(() => {
+  //   async function fetchRegions() {
+  //     try {
+  //       const data = await getRegions();
+  //       console.log("Region data form mongodb " , data)
+        
+  //     } catch (error) {
+  //       console.error("Failed to load regions:", error);
+  //       toast.error("Could not load regions. Please try again later.");
+  //     } finally {
+       
+  //     }
+  //   }
+
+  //   fetchRegions();
+  // }, []);
+
   useEffect(() => {
-    async function fetchRegions() {
+    async function loadRegions() {
       try {
         const data = await getRegions();
-        console.log("Region data form mongodb " , data)
-        
+        const regionsDuplicate = data.map((c) => c.region);
+        const uniqueRegions = [...new Set(regionsDuplicate)];
+        // setRegions(uniqueRegions);
+        console.log(uniqueRegions);
       } catch (error) {
         console.error("Failed to load regions:", error);
         toast.error("Could not load regions. Please try again later.");
-      } finally {
-       
       }
     }
 
-    fetchRegions();
+    loadRegions();
   }, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -751,10 +789,6 @@ export default function BookingPage() {
     </div>
   );
 }
-
-
-
-
 
 
 
