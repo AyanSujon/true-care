@@ -55,8 +55,8 @@
 import type { Metadata } from "next";
 import { Sniglet, Kumbh_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+// import Navbar from "@/components/layout/Navbar";
+// import Footer from "@/components/layout/Footer";
 import NextAuthProvider from "@/provider/NextAuthProvider";
 
 const sniglet = Sniglet({
@@ -88,14 +88,15 @@ export default function RootLayout({
       // className={`${sniglet.variable} ${kumbhSans.variable} antialiased font-body`}
       >
         <NextAuthProvider>
-          <Navbar />
+          {/* <Navbar /> */}
           <main>
             {children}
           </main>
-          <Footer />
+          {/* <Footer /> */}
         </NextAuthProvider>
       </body>
     </html>
 
   );
 }
+
