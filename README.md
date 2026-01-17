@@ -4,6 +4,19 @@
 
 True Care is a web application that allows users to find and hire trusted caretakers for children, elderly, and sick family members. The platform makes caregiving **easy, secure, and accessible**, with features like dynamic booking, cost calculation, and user dashboards.
 
+
+
+---
+
+## 🔐 Access Credentials (Demo/Testing)
+
+To explore the admin and user features of the dashboard, you can use the following credentials:
+
+### **Admin / User Dashboard Login**
+* **Email:** `user1@gmail.com`
+* **Password:** `@User1`
+
+---
 ---
 
 ## Table of Contents
@@ -61,7 +74,7 @@ True Care is a web application that allows users to find and hire trusted careta
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/true-care.git
+git clone https://github.com/AyanSujon/true-care.git
 ```
 
 2. Navigate to the project directory:
