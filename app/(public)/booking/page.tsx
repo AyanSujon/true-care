@@ -1203,7 +1203,7 @@ export default function BookingPage() {
     }
 
     async function fetchService() {
-      const data = await getSingleProduct(serviceId);
+      const data = await getSingleProduct(serviceId!);
       setService(data);
       setLoading(false);
     }
